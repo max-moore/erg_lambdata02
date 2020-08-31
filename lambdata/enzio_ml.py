@@ -1,7 +1,6 @@
-import pandas as pd
+
 
 # Make a function to create Matrix and Target pre validation split
-
 
 def create_xmatrix_ytarget(df, target_string):
     y_target = df[target_string]
