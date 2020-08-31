@@ -1,7 +1,9 @@
 """lambdata - collectin of Data Science helper functions
 """
-__version__ = "0.0.2"
+__version__ = "0.0.3"
+
 import pandas as pd
 import numpy as np
 
+from sklearn.model_selection import train_test_split
 # TEST = pd.DataFrame(np.ones(10))
