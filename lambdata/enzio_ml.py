@@ -5,6 +5,11 @@ import sklearn
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
+# How can I create a class that uses these functions?
+# It seems like a need a MLProblemObject.
+# that object has as attributes to Df's - X_Matrix and y_target
+# so that would be given in the constructor
+
 
 def create_xmatrix_ytarget(df, target_string):
     y_target = df[target_string]
