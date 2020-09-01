@@ -2,7 +2,7 @@
 
 # Make a function to create Matrix and Target pre validation split
 import sklearn
-# from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split
 import pandas as pd
 
 
@@ -24,3 +24,11 @@ def train_val_test_split(X_matrix, y_target):
         random_state=42)
 
     return X_train, X_val, X_test, y_train, y_val, y_test
+
+
+if __name__ == "__main__":
+    df = pd.read_csv(
+        "/Users/kellycho/Desktop/Repos/StarKells_Twitch_data/twitch_clean_data_Kelly02.csv")
+    X_matrix, y_target = create_xmatrix_ytarget(df, "Total_Earnings")
+    X_train, X_val, X_test, y_train, y_val, y_test = train_val_test_split(
+        X_matrix, y_target)
